@@ -22,6 +22,17 @@
     function logar(){
 
         var login= document.getElementByid('login').value;
+        var senha= document.getElementByid('senha').value;
+
+        if(login== "admin" && senha== "admin"){
+          alert('sucesso');
+          location.href = "home.html";
+        }else{
+            alert("usuário ou senha incorreta");
+
+        }
+
+        
     }
 </script>
 
