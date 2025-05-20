@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form>
+
+<h3>cadastro</h3>
+<input type="text"place holder="login" id="login">
+<input type="password"place holder="senha" id="senha">
+<input type="submit" onclick="logar();"return false>
+
+</form>
+
+<script>
+
+
+    function logar(){
+
+        var login= document.getElementByid('login').value;
+        var senha= document.getElementByid('senha').value;
+
+        if(login== "admin" && senha== "admin"){
+          alert('sucesso');
+          location.href = "home.html";
+        }else{
+            alert("usuário ou senha incorreta");
+
+        }
+
+        
+    }
+</script>
+
+
+
+</body>
+</html>
