@@ -1,5 +1,6 @@
 #banner{
  top: 0px;
- width: 400px;
-
+ width: 1px;
+ height:5px;
+ background-color: black;
 }
