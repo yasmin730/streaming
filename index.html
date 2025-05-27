@@ -10,10 +10,11 @@
 <form>
 
 <h3>cadastro</h3>
-<input type="text"place holder="login" id="login">
-<input type="password"place holder="senha" id="senha">
-<input type="submit" onclick="logar();"return false>
-
+<input type="text"placeholder="login" id="login">
+<input type="password"placeholder="senha" id="senha">
+<input type="telephone" placeholder="telefone" id="telefone">
+<input type="email" placeholder="email" id="email">
+<input type="submit" onclick="logar(); return false">
 </form>
 
 <script>
@@ -21,10 +22,10 @@
 
     function logar(){
 
-        var login= document.getElementByid('login').value;
-        var senha= document.getElementByid('senha').value;
+        var login = document.getElementByid('login').value;
+        var senha = document.getElementByid('senha').value;
 
-        if(login== "admin" && senha== "admin"){
+        if(login == "admin" && senha == "admin"){
           alert('sucesso');
           location.href = "home.html";
         }else{
